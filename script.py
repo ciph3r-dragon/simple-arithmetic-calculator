@@ -6,34 +6,37 @@
 #4-Use conditional logic, if-else to select the operation to perform on the two operands
 #5-Store the computed value in an object named result
 #6-Print result
-#7-End program
+#7-Loop the program to restart after every successful run
+#8-End program
 
-x = float(input('Enter first number: '))
-y = float(input('Enter second number: '))
+while True:
 
-operation = input("Enter the operation you want to perfrom ('+', '-', '*', '/', '%', '**'):")
+    x = float(input('Enter first number: '))
+    y = float(input('Enter second number: '))
 
-result = 0
+    operation = input("Enter the operation you want to perfrom ('+', '-', '*', '/', '%', '**'):")
 
-if operation == '+':
-    result = x + y
+    result = 0
 
-elif operation == '-':
-    result = x - y
+    if operation == '+':
+        result = x + y
 
-elif operation == '*':
-    result = x * y
+    elif operation == '-':
+        result = x - y
 
-elif operation == '/':
-    result = x / y
+    elif operation == '*':
+        result = x * y
 
-elif operation == '%':
-    result = x % y
+    elif operation == '/':
+        result = x / y
 
-elif operation == '**':
-    result = x ** y
+    elif operation == '%':
+        result = x % y
 
-else: 
-    print('Invalid Input')
+    elif operation == '**':
+        result = x ** y
 
-print('Your answer is: ', result)
+    else: 
+        print('Invalid Input')
+
+    print('Your answer is: ', result)
