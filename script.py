@@ -7,3 +7,33 @@
 #5-Store the computed value in an object named result
 #6-Print result
 #7-End program
+
+x = float(input('Enter first number: '))
+y = float(input('Enter second number: '))
+
+operation = input("Enter the operation you want to perfrom ('+', '-', '*', '/', '%', '**'):")
+
+result = 0
+
+if operation == '+':
+    result = x + y
+
+elif operation == '-':
+    result = x - y
+
+elif operation == '*':
+    result = x * y
+
+elif operation == '/':
+    result = x / y
+
+elif operation == '%':
+    result = x % y
+
+elif operation == '**':
+    result = x ** y
+
+else: 
+    print('Invalid Input')
+
+print('Your answer is: ', result)
